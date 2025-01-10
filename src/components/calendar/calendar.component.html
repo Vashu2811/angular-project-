@@ -1,0 +1,42 @@
+<p>calendar works!</p>
+<div class="p-6 max-w-5xl mx-auto">
+    <!-- Header Section -->
+    <div class="flex justify-between items-center mb-4">
+      <button class="p-2 rounded-full bg-gray-200 hover:bg-gray-300">&lt;</button>
+      <h2 class="text-lg font-bold">December 2024</h2>
+      <button class="p-2 rounded-full bg-gray-200 hover:bg-gray-300">&gt;</button>
+    </div>
+  
+    <!-- View Options -->
+    <div class="flex justify-between items-center mb-6">
+      <button class="py-2 px-4 bg-blue-500 text-white rounded-lg">Create</button>
+      <div class="flex space-x-4">
+        <button class="text-blue-500 border-b-2 border-blue-500">Month</button>
+        <button class="text-gray-500 hover:text-blue-500">Week</button>
+        <button class="text-gray-500 hover:text-blue-500">Day</button>
+      </div>
+    </div>
+  
+    <!-- Calendar Grid -->
+    <div class="grid grid-cols-7 border-t border-l border-gray-200">
+      <!-- Weekdays -->
+      <div class="text-center font-bold py-2 border-b border-r border-gray-200">SUN</div>
+      <div class="text-center font-bold py-2 border-b border-r border-gray-200">MON</div>
+      <div class="text-center font-bold py-2 border-b border-r border-gray-200">TUE</div>
+      <div class="text-center font-bold py-2 border-b border-r border-gray-200">WED</div>
+      <div class="text-center font-bold py-2 border-b border-r border-gray-200">THU</div>
+      <div class="text-center font-bold py-2 border-b border-r border-gray-200">FRI</div>
+      <div class="text-center font-bold py-2 border-b border-r border-gray-200">SAT</div>
+  
+      <!-- Calendar Dates -->
+      <ng-container *ngFor="let day of daysInMonth">
+        <div class="h-20 border-b border-r border-gray-200 p-2 relative">
+          <span class="absolute top-2 left-2 text-gray-400">{{ day }}</span>
+          <div *ngIf="day === 14" class="bg-orange-200 text-orange-700 px-2 py-1 rounded absolute bottom-2 left-2">
+            Ad name
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  
