@@ -115,7 +115,10 @@ import { CommonModule } from '@angular/common';
                 <div class="bg-white w-[400px] rounded-lg shadow p-6">
                   <!-- Profile Header -->
                   <div class="flex items-center mb-6">
-                    <div class="w-16 h-16 rounded-full bg-gray-300 mr-4"></div>
+                    <div class="w-16 h-16 rounded-full bg-gray-300 mr-4">
+
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/90fbc7193584070ca61e8974c82dcca028c7f15634a012e678dcc370b9107549?placeholderIfAbsent=true&apiKey=5f61ef1379d444ecbaf0fd96d5078749" alt="Profile picture of Jackson D." class="object-contain w-20 aspect-square" />
+                    </div>
                     <div>
                       <h2 class="text-xl font-semibold">Michel Smith</h2>
                       <button class="text-blue-500">Share Profile</button>
